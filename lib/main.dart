@@ -1,4 +1,3 @@
-import 'package:chatbot/chat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini_bot/flutter_gemini_bot.dart';
 import 'package:flutter_gemini_bot/models/chat_model.dart';
@@ -20,7 +19,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ChatPage(),
+      home: MyHomePage(
+        title: "Hello",
+      ),
     );
   }
 }
